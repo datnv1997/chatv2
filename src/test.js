@@ -53,9 +53,12 @@ function App() {
 
     return () => {
       // eslint-disable-next-line no-unused-expressions
-      socket.off("Message", h);
+      socket.off("Message", (data) => {
+        console.log(data);
+        handler(data, setMessage, participantsRef.current);
+      });
     };
-  }, []);
+  }, [messages]);
 
   return (
     <main>
