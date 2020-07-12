@@ -9,13 +9,16 @@
     "express": "^4.15.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "socket.io-p2p": "^2.2.0",
+    "socket.io-p2p-server": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "node index.js",
+    "server": "nodemon ./server/index.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
